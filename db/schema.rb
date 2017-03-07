@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170307200714) do
+ActiveRecord::Schema.define(version: 20170307202726) do
+
+  create_table "country_codes", force: :cascade do |t|
+    t.integer  "country_id"
+    t.string   "country_code"
+    t.string   "country_name"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "microposts", force: :cascade do |t|
     t.text     "content"
