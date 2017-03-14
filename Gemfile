@@ -61,3 +61,4 @@ gem "twitter-bootstrap-rails"
 
 gem 'twitter-bootswatch-rails'
 gem 'twitter-bootswatch-rails-helpers'
+gem 'devise'
